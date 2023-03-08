@@ -1,26 +1,17 @@
 import './App.css';
+import Logo from './componentes/Logo'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
+      <header className='App-header'>
+        <Logo/>
+        <ul className="opcoes">
+          <li className="opcao"><p>CATEGORIAS</p></li>
+          <li className="opcao"><p>MINHA ESTANTE</p></li>
+          <li className="opcao"><p>FAVORITOS</p></li>
+        </ul>
+        
       </header>
     </div>
   );
